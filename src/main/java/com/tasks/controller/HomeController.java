@@ -38,10 +38,8 @@ public class HomeController {
 		return "user";
 	}
 	
-	@RequestMapping(value = "/adduser", method = RequestMethod.POST)
-	public String adduser(@Validated User user, Model model) { 
-		System.out.println("User Page Requested");
-		model.addAttribute("userName", user.getUserName());
-		return "user";
-	}
+    @RequestMapping(value="/admin", method=RequestMethod.GET)  
+    public String privateHome() {  
+        return "privatePage";  
+    }  
 }
