@@ -11,7 +11,7 @@
 	<hr/>
 	<h1  align="center">Welcome to Task Monitoring System</h1>
 	<hr/>
-	<div>
+	<div align="center">
 		<p align="center">The time on the server is ${serverTime}.</p>
 		<form action="user" method="post">
 			<input type="text" name="userName"><br> <input
