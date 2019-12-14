@@ -5,4 +5,4 @@ RUN mkdir task-monitoring-system
 COPY target/task-monitoring-system.war /task-monitoring-system/task-monitoring-system.war
 EXPOSE 7000
 
-ENTRYPOINT ["mvn"]
+ENTRYPOINT ["java", "-jar", "task-monitoring-system"]
