@@ -39,7 +39,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/adduser", method = RequestMethod.POST)
-	public String adduser(@Validated User user, Model model) {
+	public String adduser(@Validated User user, Model model) { 
 		System.out.println("User Page Requested");
 		model.addAttribute("userName", user.getUserName());
 		return "user";
